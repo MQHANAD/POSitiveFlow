@@ -13,7 +13,7 @@ header{
     flex-shrink: 0;
     border-radius: 15px;
     width: 1050px;
-    height: 300px;
+    height: 350px;
 }
 #intro{
     position: absolute;
@@ -22,7 +22,7 @@ header{
 #whiteBox{
     position: absolute;
     width: 100vw;
-    height: 1500px;
+    height: 1000px;
     background-color:white;
 }
 #intrologo{

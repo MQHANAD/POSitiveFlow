@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>POSitiveFlow</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+
+    <div id="intro">
+        <div id="whiteBox"></div>
+        <div id="whiteBox2"></div>
+        <img src="logo/logo2.png" alt="" id="intrologo">
+        <img src="logo/logoText.png" alt="" id="introtext">
+    </div>
+
+
+
+
+    
+    <header>
+        <img src="logo/logo2.png" alt="" height="87px" id="logo">
+        <img src="logo/logoText.png" alt="" height="100px" width="350px" id="logoText">
+        <div id="buttons">
+            <button id="signup">Sign Up</button>
+            <button id="login">Login</button>
+        </div>
+        
+    </header>
+    <body>  
+        <div id="content">
+            <h1>Welcome to POSitiveFlow  – your gateway to effortless transactions!</h1>
+            <div id="imgContainer">
+                <img src="images/img1.jpeg" alt="" id="img1">
+                <img src="images/img2.jpeg" alt="" id="img2" hidden>
+                <img src="images/img3.jpeg" alt="" id="img3" hidden>
+                <img src="images/img4.jpeg" alt="" id="img4" hidden>
+            </div>
+            <h1>What is POSitiveFlow?</h1>
+            <p>POSitiveFlow is the result of a collaborative project by five enthusiastic students from the web development course at KFUPM. We set out to create an innovative POS solution that simplifies transactions and enhances business operations. Our teamwork and dedication reflect our passion for technology and commitment to delivering a great user experience.</p>
+            <p>Unlock Your Business Potential with Our POS System!</p>
+            <p>Transform the way you do business with our cutting-edge Point of Sale (POS) system! Designed to streamline transactions and </p>
+            <p>elevate customer experiences, our POS solution is your all-in-one tool for success.</p>
+            <p>Why Choose Our POS System?</p>
+            <ul>
+                <li>Seamless Transactions: Process sales quickly and efficiently, accepting cash, cards, and mobile payments with ease.</li>
+                <li>Real-Time Inventory Management: Keep track of stock levels and automate reordering, ensuring you never run out of what your customers want.</li>
+                <li>Powerful Reporting Tools: Gain insights into sales trends, customer behavior, and employee performance, empowering you to make data-driven decisions.</li>
+                <li>User-Friendly Interface: Our intuitive design means your staff can start selling in no time—no extensive training required!</li>
+                <li>Scalable Solutions: Whether you’re a small boutique or a large retail chain, our POS system grows with your business.</li>
+            </ul>
+            <p>Elevate your operations and delight your customers today! Discover how our POS system can help you thrive in today’s competitive market.</p>
+        </div>
+
+        <script>
+            let imgs=document.getElementById("imgContainer");
+            let intrologo = document.getElementById("intrologo");
+            let introText = document.getElementById("introtext");
+            let whiteBox2 = document.getElementById("whiteBox2"); 
+            let whiteBox = document.getElementById("whiteBox")
+            const firstPos =  imgs.style.right;
+            
+            let counter = 0;
+ 
+            setInterval(moveImg,5000)
+            setTimeout(intro,2000)
+            function intro(){
+                intrologo.style.left = "200px";
+                introText.style.left="600px"
+                whiteBox2.style.left="-150px"
+                setTimeout(hide,4000)
+                
+            }
+            function hide(){
+                intrologo.style.display="none";
+                introText.style.display="none";
+                whiteBox2.style.display="none";
+                whiteBox.style.display="none";
+            }
+
+                
+
+            function moveImg(){
+                let img1 =document.getElementById("img1")
+                let img2 =document.getElementById("img2")
+                let img3 =document.getElementById("img3")
+                let img4 =document.getElementById("img4")
+                if(counter < 4){
+                    let right = parseInt(imgs.style.right);
+                    imgs.style.right =right+ 2050;
+                    if(counter===0){
+                        img1.style.display = 'block'
+                        img2.style.display = 'none'
+                        img3.style.display = 'none'
+                        img4.style.display = 'none'
+                    }
+                    else if(counter===1){
+                        
+                        
+                        img1.style.display = 'none'
+                        img2.style.display = 'block'
+                        img3.style.display = 'none'
+                        img4.style.display = 'none'
+
+                    }
+                    else if(counter===2){
+                        img1.style.display = 'none'
+                        img2.style.display = 'none'
+                        img3.style.display = 'block'
+                        img4.style.display = 'none'
+                    }
+                    else if(counter===3){
+                        img1.style.display = 'none'
+                        img2.style.display = 'none'
+                        img3.style.display = 'none'
+                        img4.style.display = 'block'
+                    }
+                    counter++;
+                }else{
+                    imgs.style.right=firstPos
+                    counter=0;
+                }
+            }
+        </script>
+    </body>
+</html>

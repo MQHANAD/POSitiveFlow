@@ -1,0 +1,94 @@
+header{
+    display: flex;
+}
+#imgContainer{
+    display: flex;
+    gap: 1000px;
+    position: relative;
+    transition: right 1s ease;
+
+}
+#imgContainer img{
+    flex-grow: 1;
+    flex-shrink: 0;
+    border-radius: 15px;
+    width: 1050px;
+    height: 300px;
+}
+#intro{
+    position: absolute;
+    z-index: 1;
+}
+#whiteBox{
+    position: absolute;
+    width: 100vw;
+    height: 1500px;
+    background-color:white;
+}
+#intrologo{
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 95%;
+    transition: left 2.5s ease;
+}
+#introtext{
+    position:relative;
+    left: 0%;
+    top: 300px;
+    transition: left 2.5s ease;
+}
+#whiteBox2{
+    position: absolute;
+    background-color:white;
+    left: 0%;
+    width: 600px;
+    height: 300px;
+    top: 300px;
+    z-index: 1;
+    transition: left 2.5s ease;
+}
+
+
+
+
+#logo{
+    margin-left: 30px;
+}
+#logoText{
+    position: relative;
+
+}
+#buttons{
+    display: flex;
+    margin-left: auto;
+    margin-right: 30px;
+}
+#login{
+    position: relative;
+    top: 35px;
+    margin-left: 55px;
+    width: 250px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 16;
+    
+}
+#signup{
+    position: relative;
+    top: 35px;
+    width: 250px;
+    height: 40px;
+    margin-left: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 16;
+
+}
+#content{
+    padding-left: 50px;
+    padding-right: 50px;
+}

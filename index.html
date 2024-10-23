@@ -16,6 +16,7 @@
     
         <div id="space"></div>
         <header>
+            <div id = "white"></div>
             <img src="logo/logo2.png" alt="" height="87px" id="logo">
             <img src="logo/logoText.png" alt="" height="100px" width="350px" id="logoText">
             <div id="buttons">
@@ -55,12 +56,36 @@
                 let introText = document.getElementById("introtext");
                 let whiteBox2 = document.getElementById("whiteBox2"); 
                 let whiteBox = document.getElementById("whiteBox")
+                let logo1 = document.getElementById("logo");
+                let logoT = document.getElementById("logoText");
+                let white = document.getElementById("white");
+                let tmp = 0;
+                const logoPos = logo1.style.left;
+                const Tpos = logoT.style.left; 
                 const firstPos =  imgs.style.right;
+                const whiteP = white.style.left;
                 
                 let counter = 0;
-     
+                
                 setInterval(moveImg,5000)
                 setTimeout(intro,2000)
+                setInterval(logo,10000)
+                logo()
+                function logo(){
+                    if(tmp===0){
+                        logo1.style.left="100px";
+                        logoT.style.left="-300px";
+                        white.style.left=whiteP
+                        tmp = 1;
+                    }
+                    else{
+                        logo1.style.left=logoPos;
+                        logoT.style.left=Tpos;
+                        white.style.left="-100px";
+                        tmp=0;
+                    }
+
+                }
                 function intro(){
                     intrologo.style.left = "200px";
                     introText.style.left="600px"

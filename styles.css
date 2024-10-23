@@ -11,6 +11,31 @@ body{
     height: fit-content;
     width: fit-content;
 }
+h1{
+    width: 75%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    width: 75%;
+    font-size:25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ul{
+    font-size: 25px;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+li{
+    padding-bottom: 10px;
+}
 #white{
     background-color: white;
     position: absolute;
@@ -19,6 +44,7 @@ body{
     height: 100%;
     width: 150px;
     transition: left 2.5s ease;
+
 }
 
 #space{
@@ -28,7 +54,8 @@ body{
     display: flex;
     gap: 1000px;
     position: relative;
-    transition: right 1s ease;
+    padding-bottom: 20px;
+
 
 }
 
@@ -57,19 +84,25 @@ body{
     position: absolute;
     z-index: 3;
     top: 100px;
-    left: 35%;
+    left: 0;
+    right: 0;
+    margin: auto;
     transition: left 2.5s ease;
 }
 #introtext{
     position:absolute;
-    left: 0%;
+    left: 0;
+    right: 0;
+    margin: auto;
     top: 300px;
     transition: left 2.5s ease;
 }
 #whiteBox2{
     position: absolute;
     background-color:white;
-    left: 0%;
+    left: 0;
+    right: 0;
+    margin: auto;
     width: 600px;
     height: 300px;
     top: 300px;
@@ -88,9 +121,7 @@ body{
     margin-left: 30px;
     left: 0%;
     z-index: 3;
-    transition: left 2.5s ease;
-    
-    
+    transition: left 2.5s ease;   
 }
 #logoText{
     position: relative;
@@ -102,6 +133,7 @@ body{
     display: flex;
     margin-left: auto;
     margin-right: 30px;
+
 }
 #login{
     position: relative;
@@ -112,8 +144,8 @@ body{
     background-color: black;
     color: white;
     border-radius: 5px;
-    font-size: 16;
-    
+    font-size: 16;   
+    z-index: 100;
 }
 #signup{
     position: relative;
@@ -125,12 +157,13 @@ body{
     color: white;
     border-radius: 5px;
     font-size: 16;
-
+    z-index: 100;
 }
 #content{
     padding-left: 50px;
     padding-right: 50px;
 }
+
 button:hover{
     background-color: red;
 }

@@ -60,6 +60,7 @@
                 let logo1 = document.getElementById("logo");
                 let logoT = document.getElementById("logoText");
                 let white = document.getElementById("white");
+                let intrro = document.getElementById("intro");
                 let tmp = 0;
                 const logoPos = logo1.style.left;
                 const Tpos = logoT.style.left; 
@@ -95,6 +96,11 @@
                     
                 }
                 function hide(){
+                    intrro.style.pointerEvents="none";
+                    intrologo.style.pointerEvents="none";
+                    introText.style.pointerEvents="none";
+                    whiteBox2.style.pointerEvents="none";
+                    whiteBox.style.pointerEvents="none";
                     intrologo.style.display="none";
                     introText.style.display="none";
                     whiteBox2.style.display="none";

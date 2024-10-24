@@ -55,26 +55,22 @@ li{
     gap: 1000px;
     position: relative;
     padding-bottom: 20px;
-    
-    
-
 }
 
 #imgContainer img{
     flex-grow: 1;
     flex-shrink: 0;
     border-radius: 15px;
-    height: 350px;
     border: solid 5px lightgray ;
-    
+    aspect-ratio: 3;
 }
 #intro{
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     z-index: 5;
     left: 0%;
-
+    
 }
 #whiteBox{
     position: absolute;
@@ -136,7 +132,6 @@ li{
     display: flex;
     margin-left: auto;
     margin-right: 30px;
-
 }
 #login{
     position: relative;
@@ -147,8 +142,8 @@ li{
     background-color: black;
     color: white;
     border-radius: 5px;
-    font-size: 16;   
-    z-index: 100;
+    font-size: 16;
+    cursor: pointer;   
 }
 #signup{
     position: relative;
@@ -160,13 +155,13 @@ li{
     color: white;
     border-radius: 5px;
     font-size: 16;
-    z-index: 100;
+    cursor: pointer;
 }
 #content{
     padding-left: 50px;
     padding-right: 50px;
 }
 
-button:hover{
-    background-color: red;
+#signup:hover, #login:hover{
+    background-color: #1E293B;
 }
